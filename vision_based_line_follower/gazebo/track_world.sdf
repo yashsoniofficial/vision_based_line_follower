@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="track_world">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Line track model -->
+    <include>
+      <uri>model://track_line</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Robot with camera -->
+    <include>
+      <uri>model://line_follower_bot</uri>
+      <pose>0 -2 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>
